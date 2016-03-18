@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Person extends Model
 {
-    
+
     protected $table = 'people';
 
     protected $fillable = [
@@ -17,6 +17,6 @@ class Person extends Model
 
     public function phones()
     {
-
+        return $this->hasMany(Phone::class);
     }
 }

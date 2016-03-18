@@ -1,0 +1,23 @@
+{
+  "name": "LumenDiary",
+  "description": "0.1.0",
+  "main": "",
+  "authors": [
+    "Lucas de Oliveira <94lucasoliveira@bol.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/deoliveiralucas/lumen-appointment-book",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

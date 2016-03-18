@@ -2,11 +2,14 @@
 
 namespace LumenDiary\Http\Controllers;
 
+use LumenDiary\Entities\Person;
+
 class IndexController extends Controller
 {
 
-    public function index()
+    public function index($letter = 'A')
     {
-        return view('layout');
+        $people = Person::where('nickname', 'like', $letter . '%')->get();
+        return view('diary', compact('people'));
     }
 }

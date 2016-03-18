@@ -1,1 +1,1 @@
-## Simple Lumen Appointment Book - PHP
+## Simple Lumen Phone Book - PHP

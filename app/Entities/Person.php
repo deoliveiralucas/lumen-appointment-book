@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Entities;
+namespace PhoneBook\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 

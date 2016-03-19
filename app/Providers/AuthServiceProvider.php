@@ -1,8 +1,8 @@
 <?php
 
-namespace LumenDiary\Providers;
+namespace PhoneBook\Providers;
 
-use LumenDiary\User;
+use PhoneBook\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;

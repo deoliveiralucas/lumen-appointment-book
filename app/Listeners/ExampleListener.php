@@ -1,8 +1,8 @@
 <?php
 
-namespace LumenDiary\Listeners;
+namespace PhoneBook\Listeners;
 
-use LumenDiary\Events\ExampleEvent;
+use PhoneBook\Events\ExampleEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 

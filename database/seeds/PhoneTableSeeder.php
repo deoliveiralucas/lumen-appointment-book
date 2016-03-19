@@ -11,6 +11,6 @@ class PhoneTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(LumenDiary\Entities\Phone::class, 80)->create();
+        factory(PhoneBook\Entities\Phone::class, 80)->create();
     }
 }

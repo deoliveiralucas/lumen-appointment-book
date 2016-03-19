@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Jobs;
+namespace PhoneBook\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;

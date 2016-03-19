@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Http\Controllers;
+namespace PhoneBook\Http\Controllers;
 
 use Laravel\Lumen\Routing\Controller as BaseController;
 

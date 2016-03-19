@@ -20,7 +20,7 @@ $factory->define(App\User::class, function ($faker) {
 });
 */
 
-$factory->define(LumenDiary\Entities\Person::class, function ($faker) {
+$factory->define(PhoneBook\Entities\Person::class, function ($faker) {
     return [
         'name' => $faker->name,
         'nickname' => $faker->firstName,
@@ -28,7 +28,7 @@ $factory->define(LumenDiary\Entities\Person::class, function ($faker) {
     ];
 });
 
-$factory->define(LumenDiary\Entities\Phone::class, function ($faker) {
+$factory->define(PhoneBook\Entities\Phone::class, function ($faker) {
     return [
         'type' => $faker->randomElement(['Residential', 'Comercial', 'Celphone', 'Records']),
         'country' => $faker->optional(0.7, 55)->numberBetween(1, 197),

@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Providers;
+namespace PhoneBook\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

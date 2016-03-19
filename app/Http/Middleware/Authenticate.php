@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Http\Middleware;
+namespace PhoneBook\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory as Auth;

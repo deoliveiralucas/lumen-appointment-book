@@ -40,12 +40,12 @@ $app->withEloquent();
 
 $app->singleton(
     Illuminate\Contracts\DAppebug\ExceptionHandler::class,
-    LumenDiary\Exceptions\Handler::class
+    PhoneBook\Exceptions\Handler::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    LumenDiary\Console\Kernel::class
+    PhoneBook\Console\Kernel::class
 );
 
 /*
@@ -60,11 +60,11 @@ $app->singleton(
 */
 
 // $app->middleware([
-//    LumenDiary\Http\Middleware\ExampleMiddleware::class
+//    PhoneBook\Http\Middleware\ExampleMiddleware::class
 // ]);
 
 // $app->routeMiddleware([
-//     'auth' => LumenDiary\Http\Middleware\Authenticate::class,
+//     'auth' => PhoneBook\Http\Middleware\Authenticate::class,
 // ]);
 
 /*
@@ -78,9 +78,9 @@ $app->singleton(
 |
 */
 
-// $app->register(LumenDiary\Providers\AppServiceProvider::class);
-// $app->register(LumenDiary\Providers\AuthServiceProvider::class);
-// $app->register(LumenDiary\Providers\EventServiceProvider::class);
+// $app->register(PhoneBook\Providers\AppServiceProvider::class);
+// $app->register(PhoneBook\Providers\AuthServiceProvider::class);
+// $app->register(PhoneBook\Providers\EventServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ $app->singleton(
 |
 */
 
-$app->group(['namespace' => 'LumenDiary\Http\Controllers'], function ($app) {
+$app->group(['namespace' => 'PhoneBook\Http\Controllers'], function ($app) {
     require __DIR__.'/../app/Http/routes.php';
 });
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Jobs;
+namespace PhoneBook\Jobs;
 
 class ExampleJob extends Job
 {

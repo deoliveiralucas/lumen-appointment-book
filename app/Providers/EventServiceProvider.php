@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Providers;
+namespace PhoneBook\Providers;
 
 use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
 
@@ -12,8 +12,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'LumenDiary\Events\SomeEvent' => [
-            'LumenDiary\Listeners\EventListener',
+        'PhoneBook\Events\SomeEvent' => [
+            'PhoneBook\Listeners\EventListener',
         ],
     ];
 }

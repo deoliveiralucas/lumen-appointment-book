@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lumen Diary</title>
+    <title>Phone Book</title>
 
     <link href="css/app.css" rel="stylesheet">
   </head>
@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-lg-12 page-header">
           <h1>
-            Lumen Diary<br>
+            Phone book<br>
             <small><i class="glyphicon glyphicon-phone-alt"></i> Phones</small>
             <span class="pull-right">
               <form class="form-inline" action="#" method="post">
@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-lg-12">
           @foreach(range('A', 'Z') as $letter)
-            <a href="{{ route('diary.letter', ['letter' => $letter]) }}" class="btn btn-primary btn-xs">{{ $letter }}</a>
+            <a href="{{ route('phonebook.letter', ['letter' => $letter]) }}" class="btn btn-primary btn-xs">{{ $letter }}</a>
           @endforeach
         </div>
       </div>

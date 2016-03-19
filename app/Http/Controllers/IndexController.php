@@ -1,8 +1,8 @@
 <?php
 
-namespace LumenDiary\Http\Controllers;
+namespace PhoneBook\Http\Controllers;
 
-use LumenDiary\Entities\Person;
+use PhoneBook\Entities\Person;
 
 class IndexController extends Controller
 {
@@ -10,6 +10,6 @@ class IndexController extends Controller
     public function index($letter = 'A')
     {
         $people = Person::where('nickname', 'like', $letter . '%')->get();
-        return view('diary', compact('people'));
+        return view('phone-book', compact('people'));
     }
 }

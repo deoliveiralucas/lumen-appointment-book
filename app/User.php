@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary;
+namespace PhoneBook;
 
 use Illuminate\Auth\Authenticatable;
 use Laravel\Lumen\Auth\Authorizable;

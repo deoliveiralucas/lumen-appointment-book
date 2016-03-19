@@ -11,6 +11,6 @@ class PersonTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(LumenDiary\Entities\Person::class, 30)->create();
+        factory(PhoneBook\Entities\Person::class, 30)->create();
     }
 }

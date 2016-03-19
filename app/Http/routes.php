@@ -12,11 +12,11 @@
 */
 
 $app->get('/', [
-    'as' => 'diary.index',
+    'as' => 'phonebook.index',
     'uses' => 'IndexController@index'
 ]);
 
 $app->get('/{letter}', [
-    'as' => 'diary.letter',
+    'as' => 'phonebook.letter',
     'uses' => 'IndexController@index'
 ]);

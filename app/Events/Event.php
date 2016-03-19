@@ -1,6 +1,6 @@
 <?php
 
-namespace LumenDiary\Events;
+namespace PhoneBook\Events;
 
 use Illuminate\Queue\SerializesModels;
 

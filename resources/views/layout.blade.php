@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phone Book</title>
 
-    <link href="css/app.css" rel="stylesheet">
+    <link href="{{ url('css/app.css') }}" rel="stylesheet">
   </head>
   <body>
 
@@ -17,11 +17,13 @@
             Phone book<br>
             <small><i class="glyphicon glyphicon-phone-alt"></i> Phones</small>
             <span class="pull-right">
-              <form class="form-inline" action="#" method="post">
+              <form class="form-inline" action="{{ route('phonebook.search') }}" method="get">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search contact...">
+                  <input type="text" class="form-control" name="search" placeholder="Search contact...">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                    <button class="btn btn-default" type="submit">
+                      <span class="fa fa-search"></span>
+                    </button>
                   </span>
                 </div>
               </form>
@@ -32,23 +34,26 @@
 
       <div class="row">
         <div class="col-lg-12">
-          @foreach(range('A', 'Z') as $letter)
-            <a href="{{ route('phonebook.letter', ['letter' => $letter]) }}" class="btn btn-primary btn-xs">{{ $letter }}</a>
+          @foreach($letters as $letter)
+            <a href="{{ route('phonebook.letter', ['letter' => $letter]) }}"
+              class="btn btn-primary btn-xs">{{ $letter }}</a>
           @endforeach
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-12 btn-row">
-          <a href="#" class="btn btn-primary">New contact</a>
+          <a href="{{ route('person.create') }}" class="btn btn-primary">New contact</a>
         </div>
-      </div>
-
-      <div class="row">
         @yield('content')
       </div>
     </div>
 
-    <script src="js/scripts.js"></script>
+    <script src="{{ url('js/scripts.js') }}"></script>
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    </script>
   </body>
 </html>

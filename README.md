@@ -2,7 +2,7 @@
 
 Simple Lumen Appointment Book - PHP
 
-## Install
+## Installation
 
 **1.** Clone repository and install dependencies
 

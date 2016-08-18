@@ -61,9 +61,15 @@ $app->get('/person/{id}', [
     'as' => 'person.delete',
     'uses' => 'PersonController@delete'
 ]);
+
 /**
  * Phone
  */
+$app->get('/phone/new', [
+    'as' => 'phone.create',
+    'uses' => 'PhoneController@create'
+]);
+
 $app->get('/phone/{id}', [
     'as' => 'phone.delete',
     'uses' => 'PhoneController@delete'
@@ -72,11 +78,6 @@ $app->get('/phone/{id}', [
 $app->delete('/phone/{id}', [
     'as' => 'phone.destroy',
     'uses' => 'PhoneController@destroy'
-]);
-
-$app->get('/phone/new', [
-    'as' => 'phone.create',
-    'uses' => 'PhoneController@create'
 ]);
 
 $app->post('/phone', [
